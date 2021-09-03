@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #eeeeee;
+    font-family: 'Azeret Mono', monospace;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1{
+    background-color: #056676;
+    padding: 12px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input{
+    padding: 12px;
+    margin: 12px 6px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    width: 320px;
+    font-size: 20px;
+    color: grey;
+}
+
+#result{
+    width: 85%;
+    height: 100vh;
+    margin: 12px 6px;
+    background-color: #a3d2ca8f;
+    padding: 12px;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+}
+
+.cards{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #5eaaa8;
+    border-radius: 6px;
+    padding: 12px;
+    line-height: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
